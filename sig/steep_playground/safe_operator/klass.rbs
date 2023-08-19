@@ -1,8 +1,11 @@
 module SteepPlayground
   module SafeOperator
     class Klass
-      def right: () -> (Klass | nil)
-      def left: () -> (Klass | nil)
+      attr_reader num: Integer
+
+      def initialize: (Integer) -> void
+      def right: () -> Klass?
+      def left:  () -> Klass?
     end
   end
 end

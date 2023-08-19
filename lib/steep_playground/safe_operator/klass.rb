@@ -1,12 +1,18 @@
 module SteepPlayground
   module SafeOperator
     class Klass
+      attr_reader :num
+
+      def initialize(num)
+        @num = num
+      end
+
       def right
-        @right ||= Random.new.rand > 0.5 ? Klass.new : nil
+        @right ||= @num > 0.5 ? Klass.new(@num) : nil
       end
 
       def left
-        @left ||= Random.new.rand > 0.5 ? Klass.new : nil
+        @left ||= @num > 0.5 ? Klass.new(@num) : nil
       end
     end
   end

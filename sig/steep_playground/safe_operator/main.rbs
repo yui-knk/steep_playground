@@ -1,7 +1,10 @@
 module SteepPlayground
   module SafeOperator
     class Main
-      def main: () -> Integer
+      def main1: () -> Integer
+      def main2: () -> Integer
+
+      def sub: (Integer) -> Integer
     end
   end
 end
