@@ -1,0 +1,8 @@
+module SteepPlayground
+  module SafeOperator
+    class Klass
+      def right: () -> (Klass | nil)
+      def left: () -> (Klass | nil)
+    end
+  end
+end

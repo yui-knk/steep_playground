@@ -1,0 +1,7 @@
+module SteepPlayground
+  module SafeOperator
+    class Main
+      def main: () -> Integer
+    end
+  end
+end
