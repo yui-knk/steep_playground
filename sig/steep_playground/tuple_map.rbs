@@ -3,6 +3,8 @@ module SteepPlayground
 
     def self.tuple_class: () -> Array[Tuple]
     def self.tuple: () -> Array[[Symbol, String]]
+    def self.tuple2: (Array[[Symbol, String]]) -> Array[[Symbol, String]]
+    def self.tuple3: (Array[[Symbol, String]]) -> Array[[Symbol, String]]
 
     class Tuple
       attr_reader sym: Symbol

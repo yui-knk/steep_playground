@@ -10,18 +10,36 @@ module SteepPlayground
     end
 
     def self.tuple_class
-      tm = [Tuple.new(:sym, "str")]
+      tuples = [Tuple.new(:sym, "str")]
 
-      tm.map do |t|
+      tuples.map do |t|
         t
       end
     end
 
     def self.tuple
-      tm = [[:sym, "str"]]
+      tuples = [[:sym, "str"]]
 
-      tm.map do |t|
+      tuples.map do |t|
         t
+      end
+    end
+
+    def self.tuple2(tuples)
+      tuples.map do |t|
+        [t[0], t[1]]
+      end
+    end
+
+    def self.tuple3(tuples)
+      tuples.map! do |t|
+        [t[0], t[1]]
+      end
+    end
+
+    def self.tuple4(tuples)
+      tuples.map! do |t|
+        [t[1], t[0]]
       end
     end
   end
