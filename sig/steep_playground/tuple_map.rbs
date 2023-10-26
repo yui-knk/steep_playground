@@ -1,0 +1,14 @@
+module SteepPlayground
+  module TupleMap
+
+    def self.tuple_class: () -> Array[Tuple]
+    def self.tuple: () -> Array[[Symbol, String]]
+
+    class Tuple
+      attr_reader sym: Symbol
+      attr_reader str: String
+
+      def initialize: (Symbol, String) -> void
+    end
+  end
+end
